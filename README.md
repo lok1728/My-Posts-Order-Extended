@@ -1,2 +1,2 @@
-mypostsorderextended
+My-Posts-Order-Extended
 ====================

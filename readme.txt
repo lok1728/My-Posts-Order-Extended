@@ -2,7 +2,7 @@
 Contributors: kapilchugh, dmarshall
 Tags: custom post order, page order, arrange post order, custom post type, sort post, reorder, featured posts, rss feed, modify order, rearrange posts
 Requires at least: 3.0
-Tested up to: 3.5
+Tested up to: 4.5.2
 Stable tag: 1.2.1.1
 Fork Version 1.1
 License: GPLv2 or later
@@ -129,6 +129,10 @@ Please send me your suggestions/feedback/queries to kapil.chugh@hotmail.com and 
 5. Posts display on site.
 
 == Changelog ==
+= 1.2 =
+* FIXED: PHP warning: missing argument 2 in classes/Section/Section-Featured.php
+* Compatibility tested WP 4.5.2
+
 = 1.1 =
 * Code Cleaned Up
 * Updated readme with instructions

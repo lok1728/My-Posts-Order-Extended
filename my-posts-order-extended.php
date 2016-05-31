@@ -4,7 +4,7 @@ Plugin Name: My Posts Order Extended
 Description: A plugin which allows you to sort posts, pages, custom post type in ANY order. This fork extends the plugin and adds the option to select a section to be Featured.
 Author: Kapil Chugh | Extended by D.Marshall
 Author URI: http://prospect7.com
-Version: 1.2.1.1 (fork version 1.1)
+Version: 1.2.1.1 (fork version 1.2)
 */
 
  	include 'includes/db-schema.php';//Custom table is added

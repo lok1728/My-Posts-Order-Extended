@@ -33,7 +33,7 @@
     */
 	function mpo_query_section_name () {
 		global $wpdb;
-		$featuredsection =  $wpdb->get_var( $wpdb->prepare("SELECT section_name FROM {$wpdb->prefix}section_featured" ));
+    $featuredsection =  $wpdb->get_var( "SELECT section_name FROM {$wpdb->prefix}section_featured" );
 		return $featuredsection;
 		
 	}

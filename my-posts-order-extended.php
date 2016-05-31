@@ -1,10 +1,10 @@
 <?php
 /*
 Plugin Name: My Posts Order Extended
-Description: A plugin which allows you to sort posts, pages, custom post type in ANY order. This fork extends the plugin and adds the option for Featured Sections. Be sure to keep the original plugin installed but DEACTIVATED.
+Description: A plugin which allows you to sort posts, pages, custom post type in ANY order. This fork extends the plugin and adds the option to select a section to be Featured.
 Author: Kapil Chugh | Extended by D.Marshall
 Author URI: http://prospect7.com
-Version: 1.2.1.1 (fork version 1.0)
+Version: 1.2.1.1 (fork version 1.1)
 */
 
  	include 'includes/db-schema.php';//Custom table is added
@@ -30,9 +30,6 @@ Version: 1.2.1.1 (fork version 1.0)
     <script type="text/javascript">var MPO_IMAGES_PATH = '<?php echo MPO_IMAGES_PATH; ?>';</script>
     <link rel="stylesheet" href="<?php echo MPO_CSS_PATH; ?>theme-editor.css" type="text/css" media="screen" /> <?php
   }
-
-
-
 
  /**
 	* Includes menu option

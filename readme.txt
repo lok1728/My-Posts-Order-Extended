@@ -4,7 +4,7 @@ Tags: custom post order, page order, arrange post order, custom post type, sort 
 Requires at least: 3.0
 Tested up to: 3.5
 Stable tag: 1.2.1.1
-Fork Version 1.0
+Fork Version 1.1
 License: GPLv2 or later
 
 A plugin which allows you to sort posts, pages, custom post type in ANY order and display the same in your sidebar.
@@ -44,6 +44,26 @@ Now wasn't that easy!
 8. In the same way you can add multiple widgets.
 9. If you want to display ordered posts somewhere else in a theme, then use it like this
 query_posts('section_name=NAME_OF_SECTION')
+
+== Extended Features ==
+
+1. To make use of the Featured Sections and display them add this code to your page template:
+
+     <!-- BEGIN CHECK FOR SELECTED FEATURED SECTION -->
+        <?php
+          if ( mpoeactive('my-posts-order-extended/my-posts-order-extended.php') ) {
+          //plugin is activated
+            $secfeat_obj = new Section_Featured(); // Set up the string
+            $featured = $secfeat_obj->mpo_query_section_name(); // load the featured string with the selected section loaded in the admin
+          } else {
+            // plugin is not activated, therefore we'll fall back to the default theme's list of posts in the slideshow.
+            $featured = 'noposts';
+            }
+        ?>
+        <?php query_posts('section_name='.$featured); ?>
+      <!-- END CHECK FOR SELECTED FEATURED SECTION -->
+      <!-- BEGIN THE LOOP WP QUERY -->
+      <?php if($wp_query->have_posts()) : while($wp_query->have_posts()) : $wp_query->the_post(); ?>
 
 == Frequently Asked Questions ==
 = How can I use custom template option in widget? =
@@ -109,7 +129,11 @@ Please send me your suggestions/feedback/queries to kapil.chugh@hotmail.com and 
 5. Posts display on site.
 
 == Changelog ==
-= 2.0 =
+= 1.1 =
+* Code Cleaned Up
+* Updated readme with instructions
+
+= 1.0 =
 * Plugin Forked
 * Added option to choose a group of posts order from the options to display on page
 * Created $featured to be used in theme template where $featured is the variable string that is selected from the option panel

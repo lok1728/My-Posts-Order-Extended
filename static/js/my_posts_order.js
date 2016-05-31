@@ -85,7 +85,7 @@
 	}
 
  /**
-	* This function is called when category radio button us clicked.
+	* This function is called when category radio button is clicked.
   */
   jQuery("#cat_reorder").live( 'click', function() {
     var is_checked = jQuery("#cat_reorder").is(':checked');

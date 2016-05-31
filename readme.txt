@@ -4,7 +4,7 @@ Tags: custom post order, page order, arrange post order, custom post type, sort 
 Requires at least: 3.0
 Tested up to: 4.5.2
 Stable tag: 1.2.1.1
-Fork Version 1.1
+Fork Version 1.2
 License: GPLv2 or later
 
 A plugin which allows you to sort posts, pages, custom post type in ANY order and display the same in your sidebar.
@@ -64,6 +64,7 @@ query_posts('section_name=NAME_OF_SECTION')
       <!-- END CHECK FOR SELECTED FEATURED SECTION -->
       <!-- BEGIN THE LOOP WP QUERY -->
       <?php if($wp_query->have_posts()) : while($wp_query->have_posts()) : $wp_query->the_post(); ?>
+
 
 == Frequently Asked Questions ==
 = How can I use custom template option in widget? =
@@ -137,7 +138,7 @@ Please send me your suggestions/feedback/queries to kapil.chugh@hotmail.com and 
 * Code Cleaned Up
 * Updated readme with instructions
 
-= 1.0 =
+= 1.0 Forked =
 * Plugin Forked
 * Added option to choose a group of posts order from the options to display on page
 * Created $featured to be used in theme template where $featured is the variable string that is selected from the option panel
